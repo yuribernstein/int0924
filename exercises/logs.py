@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.INFO,
                     format='[%(asctime)s - %(filename)s:%(lineno)d, \
                         Function: %(funcName)s] %(levelname)s - %(message)s', 
                     handlers=[
-                        logging.FileHandler("/tmp/runtime.log"),
+                        logging.FileHandler("systeminfo.log"),
                         logging.StreamHandler(sys.stdout)
                     ]
 )
