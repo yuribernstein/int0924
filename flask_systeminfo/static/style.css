@@ -5,8 +5,13 @@ body {
     color: #333;
 }
 
+#buttons {
+    margin-top: 20px;
+}
+
 h1 {
     margin-top: 20px;
+    color: #007bff;
 }
 
 .buttons {

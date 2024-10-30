@@ -102,13 +102,14 @@ class SystemInfo:
                 print(f'{key}:')
                 print(str(response[key]).strip('{}').replace(',', '\n'))
 
-
+no_args = True
 for arg in args_list:
     if args_list[arg] == True:
-        break
-    raise Exception('NoArgumentsException', 'No information requested. Use -h or --help for available options.')
-else:
+        no_args = False
+
+if no_args:
     logger.debug(f'Arguments provided: {args_list}')
+    raise Exception('NoArgumentsException', 'No information requested. Use -h or --help for available options.')
 
 # Initialize SystemInfo instance
 system_info = SystemInfo()
