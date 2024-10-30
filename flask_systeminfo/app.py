@@ -28,9 +28,9 @@ def systeminfo():
     """
     metric = request.args.get('metric', default=None)
     
-    if metric not in ['os_info', 'cpu', 'mem', 'proc', 'all']:
+    if metric not in ['os_info', 'cpu', 'mem', 'all']:
         logger.error("Invalid metric requested")
-        return "Invalid metric. Expected one of: os_info, cpu, mem, proc, all", 400
+        return "Invalid metric. Expected one of: os_info, cpu, mem, all", 400
 
     # Collect system info
     system_info.collect_info()

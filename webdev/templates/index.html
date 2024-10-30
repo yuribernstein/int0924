@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML and CSS Cheatsheet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>HTML and CSS Cheatsheet</h1>
+
+  <!-- Basic Structure of an HTML Document -->
+  <section id="basic-structure">
+    <h2>Basic Structure of an HTML Document</h2>
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;My First Web Page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hello, World!&lt;/h1&gt;
+          &lt;p&gt;This is my first webpage.&lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+  </section>
+
+  <!-- Common HTML Elements -->
+  <section id="common-elements">
+    <h2>Common HTML Elements</h2>
+    <h3>Main Heading</h3>
+    <p>This is a paragraph with <a href="https://example.com">a link</a>.</p>
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+    </ul>
+  </section>
+
+  <!-- HTML5 Semantic Elements -->
+  <section id="semantic-elements">
+    <h2>HTML5 Semantic Elements</h2>
+    <header>
+      <h3>Website Title</h3>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+    <section>
+      <h4>Introduction</h4>
+      <p>Welcome to our website.</p>
+    </section>
+    <footer>
+      <p>&copy; 2024 My Website</p>
+    </footer>
+  </section>
+
+  <!-- HTML5 Multimedia Elements -->
+  <section id="multimedia">
+    <h2>HTML5 Multimedia Elements</h2>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Forms -->
+  <section id="forms">
+    <h2>HTML Forms</h2>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- CSS Reference and Examples -->
+  <section id="css">
+    <h2>CSS Examples</h2>
+
+    <h3>Using ID and Class Selectors</h3>
+    <div id="main-content" class="section highlight">
+      <h4>About Us</h4>
+      <p>We are a team of web developers.</p>
+    </div>
+
+    <h3>Box Model Example</h3>
+    <div class="box-model">
+      <p>This box uses the CSS box model.</p>
+    </div>
+
+    <h3>Flexbox Example</h3>
+    <div class="flex-container">
+      <div>Flex Item 1</div>
+      <div>Flex Item 2</div>
+    </div>
+
+    <h3>Grid Example</h3>
+    <div class="grid-container">
+      <div>Grid Item 1</div>
+      <div>Grid Item 2</div>
+    </div>
+  </section>
+</body>
+</html>
