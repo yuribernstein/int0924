@@ -29,4 +29,4 @@ def check_certificate(url):
         return 'failed', str(e)
 
 # Example usage
-print(check_certificate("https://example.com"))
+print(check_certificate("https://oracle.com"))
