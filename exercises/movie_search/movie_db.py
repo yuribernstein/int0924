@@ -48,7 +48,7 @@ def movie_search(pattern):
     querystring = {"s": pattern, "r": "json", "page": "1"}
 
     headers = {
-        "x-rapidapi-key": "",
+        "x-rapidapi-key": "f4fee9ade6mshb21cb650647e763p1d4eb0jsn7a2b2ea6a7d9",
         "x-rapidapi-host": "movie-database-alternative.p.rapidapi.com"
     }
 

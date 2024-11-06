@@ -1,0 +1,13 @@
+body {
+    background-color: #679AAF;   
+}
+
+body button {
+    background-color: #6050DC;
+    height: 120px;
+    width: 335px;
+    position: relative;
+    top: 50px;
+    left: 35%;
+}
+
