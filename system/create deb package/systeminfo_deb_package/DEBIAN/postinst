@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-ip3 install -r /etc/systeminfo/requirements.txt --no-warn-script-location --no-warn-conflicts --no-warn-script-location -y
+pip3 install -r /etc/systeminfo/requirements.txt --no-warn-script-location --no-warn-conflicts --no-warn-script-location -y
 
 # Create necessary directories and set permissions
 mkdir -p /var/log/systeminfo
