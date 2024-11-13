@@ -1,0 +1,4 @@
+# Configuration file for systeminfo
+# Add your configurations here
+port: 8080
+host: 0.0.0.0

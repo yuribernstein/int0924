@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>System Information Viewer</h1>
+
+    <div id="buttons" class="buttons">
+        <button onclick="fetchData('os_info')">Display OS Info</button>
+        <button onclick="fetchData('cpu')">Display CPU Info</button>
+        <button onclick="fetchData('mem')">Display Memory Info</button>
+        <button onclick="fetchData('all')">Display All</button>
+        <button onclick="fetchJsonData()">Display JSON</button>
+    </div>
+
+    <div id="response-container">
+        <h2>Response Data</h2>
+        <table id="response-table">
+            <thead>
+                <tr id="table-header"></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

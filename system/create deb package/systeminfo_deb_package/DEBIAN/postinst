@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+ip3 install -r /etc/systeminfo/requirements.txt --no-warn-script-location --no-warn-conflicts --no-warn-script-location -y
+
+# Create necessary directories and set permissions
+mkdir -p /var/log/systeminfo
+chmod 755 /var/log/systeminfo
+
+# Uncomment the line below to open a specific port if needed
+iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+
+# Enable and start the service
+systemctl enable systeminfo.service
+systemctl start systeminfo.service

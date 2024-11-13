@@ -1,0 +1,8 @@
+Package: systeminfo
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: amd64
+Depends: systemd
+Maintainer: Your Name <your.email@example.com>
+Description: systeminfo - display system information

@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+# Stop and disable the service before removing the package
+systemctl stop systeminfo.service
+systemctl disable systeminfo.service
+
+pip3 uninstall -r /etc/systeminfo/requirements.txt -y
