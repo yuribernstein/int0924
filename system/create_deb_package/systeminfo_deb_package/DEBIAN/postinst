@@ -8,7 +8,8 @@ mkdir -p /var/log/systeminfo
 chmod 755 /var/log/systeminfo
 
 # Uncomment the line below to open a specific port if needed
-iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+sudo ufw allow 8080/tcp
+
 
 # Enable and start the service
 systemctl enable systeminfo.service
