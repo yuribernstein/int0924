@@ -59,6 +59,10 @@ def static_file(filename):
 def index():
     return render_template('index.html')
 
+@app.route('/health')
+def health():
+    return {}, 200
+
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(port=8081, host='0.0.0.0')
