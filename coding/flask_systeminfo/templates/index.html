@@ -10,11 +10,11 @@
     <h1>System Information Viewer</h1>
 
     <div id="buttons" class="buttons">
-        <button onclick="fetchData('os_info')">Display OS Info</button>
-        <button onclick="fetchData('cpu')">Display CPU Info</button>
-        <button onclick="fetchData('mem')">Display Memory Info</button>
-        <button onclick="fetchData('all')">Display All</button>
-        <button onclick="fetchJsonData()">Display JSON</button>
+        <button id="osinfo" onclick="fetchData('os_info')">Display OS Info</button>
+        <button id="cpuinfo" onclick="fetchData('cpu')">Display CPU Info</button>
+        <button id="meminfo" onclick="fetchData('mem')">Display Memory Info</button>
+        <button id="allinfo" onclick="fetchData('all')">Display All</button>
+        <button id="jsoninfo" onclick="fetchJsonData()">Display JSON</button>
     </div>
 
     <div id="response-container">
