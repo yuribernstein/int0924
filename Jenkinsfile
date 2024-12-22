@@ -8,7 +8,20 @@ pipeline{
 //
 
     stages {
-        
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+                echo "Workspace cleaned."
+                script {
+                    sh """
+                    sudo docker rm -f $(sudo docker ps -a -q)
+                    """
+                }
+                echo "Docker containers removed."
+            }
+        }
+
+
         stage('Clone repo') {
             steps {
                 script {
