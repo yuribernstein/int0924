@@ -10,9 +10,9 @@ pipeline{
     stages {
         stage('Clean Workspace') {
             steps {
-                cleanWs()
-                echo "Workspace cleaned."
                 script {
+                    cleanWs()
+                    echo "Workspace cleaned."
                     sh """
                     sudo docker rm -f $(sudo docker ps -a -q)
                     """
