@@ -18,7 +18,7 @@ pipeline{
         }
         stage('Docker build') {
             steps {
-                dir('int0924/coding/flask_systeminfo'){
+                dir('coding/flask_systeminfo'){
                     script {
                         sh """
                         sudo docker build -t flask_systeminfo:temp .
