@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+# Create necessary directories and set permissions
+mkdir -p /var/log/new_app
+chmod 755 /var/log/new_app
+
+# Uncomment the line below to open a specific port if needed
+# iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+
+# Enable and start the service
+systemctl enable new_app.service
+systemctl start new_app.service

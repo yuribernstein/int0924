@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Monitoring System</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="spinner-container">
+		<div class="spinner spinner1"></div>
+		<div class="spinner spinner2"></div>
+		<div class="spinner spinner3"></div>
+	  </div>
+	<div id="sidebar">
+		<div id="greetUser">
+			<h2>Welcome, <span id="username"></span></h2>
+		</div>
+		<div id="dashboardControls" style="display: block;">
+			<ul>
+				<li id="addDomain">
+					<button onclick="">Add Domains</button>
+				</li>
+				<li id="modifyScheduler">
+					<button onclick="">Modify Scheduler</button>
+				</li>
+			</ul>
+		</div>
+		<div id="">
+
+		</div>
+	</div>
+
+
+	<div id="alert-message">
+		<span id="alert-text"></span>
+	  </div> 
+	<textarea id="file-content"></textarea>
+	<div id="table-view">
+		<table id="data-table">
+			<thead>
+				<tr>
+					<th>Liveness</th>
+					<th>Common Name</th>
+					<th>Expiration</th>
+					<th>Days Left</th>
+					<th>Issuer</th>
+					<th>Serial Number</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div> 
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

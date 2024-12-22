@@ -9,4 +9,5 @@ class MyUser(HttpUser):
 
     @task
     def about_page(self):
-        self.client.get("/about")  # Simulates visiting the About page
+        self.client.get("/health")  # Simulates visiting the About page
+

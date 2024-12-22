@@ -2,6 +2,7 @@ import logging
 import sys
 from flask import Flask, request, jsonify, render_template
 from systeminfo import SystemInfo
+import time
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -61,6 +62,7 @@ def index():
 
 @app.route('/health')
 def health():
+    time.sleep(30)
     return {}, 200
 
 # Run the Flask app

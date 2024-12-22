@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+# Stop and disable the service before removing the package
+systemctl stop new_app.service
+systemctl disable new_app.service

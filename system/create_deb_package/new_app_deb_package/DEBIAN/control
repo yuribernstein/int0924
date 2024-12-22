@@ -1,0 +1,8 @@
+Package: new_app
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: amd64
+Depends: systemd
+Maintainer: Your Name <your.email@example.com>
+Description: new_app - A custom Debian package template

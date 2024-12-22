@@ -1,0 +1,19 @@
+[Unit]
+Description=new_app Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/new_app_start.sh
+ExecStop=/bin/kill $MAINPID
+Restart=on-failure
+Type=simple
+User=root
+StandardOutput=journal
+StandardError=journal
+
+# Uncomment the lines below to redirect output to log files
+# StandardOutput=file:/var/log/myapp/myapp.log
+# StandardError=file:/var/log/myapp/myapp_error.log
+
+[Install]
+WantedBy=multi-user.target

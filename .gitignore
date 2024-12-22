@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+chrome-mac-arm64/
+chrome-mac-arm64.zip
 # C extensions
 *.so
 
