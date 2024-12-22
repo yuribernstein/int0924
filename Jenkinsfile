@@ -5,33 +5,33 @@ pipeline{
         label 'docker'
     }
     
+//
+
     stages {
         
-        stage('Stage 1') {
+        stage('Clone repo') {
             steps {
                 script {
-                    echo "Hello from stage1"
-                    sh """
-                    hostname
-                    """
+                    git branch: 'main', url: 'https://github.com/yuribernstein/int0924.git'
                 }
             }
         }
-        stage('Stage 2') {
+        stage('Docker build') {
             steps {
-                script {
-                    echo "Hello from stage2"
-                    sh """
-                    whoami
-                    """
+                dir('int0924/coding/flask_systeminfo'){
+                    script {
+                        sh """
+                        sudo docker build -t flask_systeminfo:temp .
+                        """
+                    }
                 }
             }
         }
-        stage('Stage 3') {
+        stage('Run container') {
             steps {
                 script {
                     sh """
-                    sudo docker images
+                    sudo docker run -p 8080:8080 -d flask_systeminfo:temp
                     """
                 }
             }
