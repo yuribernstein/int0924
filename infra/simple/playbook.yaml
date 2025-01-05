@@ -1,0 +1,41 @@
+- hosts: all
+  become: yes
+  roles:
+    - common_server
+
+- hosts: ec2_jenkins
+  tasks:
+    - name: Set Jenkins private IP as a global fact
+      set_fact:
+        jenkins_ip_global: "{{ ansible_facts['default_ipv4']['address'] }}"
+
+    # - name: Debug Jenkins private IP
+    #   debug:
+    #     msg: "Jenkins Private IP: {{ jenkins_ip_global }}"
+            
+- hosts: ec2_nfs
+  become: yes
+  tasks:
+    - name: Set NFS server private ip as a global fact
+      set_fact:
+        nfs_ip_global: "{{ ansible_facts['default_ipv4']['address'] }}"
+
+    - name: Configure NFS with Jenkins private IP
+      debug:
+        msg: "Configuring NFS with client IP: {{ hostvars[groups['ec2_jenkins'][0]].jenkins_ip_global }}"
+  vars:
+    export_directory: /mnt/export
+    client_ip:  "{{ hostvars[groups['ec2_jenkins'][0]]['jenkins_ip_global'] }}"
+  roles:
+    - nfs
+
+
+- hosts: ec2_jenkins
+  become: yes
+  vars:
+    nfs_ip: "{{ hostvars[groups['ec2_nfs'][0]]['nfs_ip_global'] }}"
+    export_directory: /mnt/export
+  roles:
+    - jenkins
+
+
