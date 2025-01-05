@@ -1,0 +1,37 @@
+---
+  - name: Set Jenkins IP as a fact
+    set_fact:
+      jenkins_ip: "{{ ansible_host }}"
+
+  - name: Install Docker
+    apt:
+      name: docker.io
+      state: present
+  
+  - name: Create /var/jenkins_home
+    file:
+      name: /var/jenkins_home
+      state: directory
+
+  - name: Add NFS export to fstab file
+    ansible.builtin.lineinfile:
+      path: /etc/fstab
+      line: "{{ nfs_ip }}:/{{ export_directory }} /var/jenkins_home nfs defaults 0 0"
+      create: yes
+
+  - name: Apply mounts
+    shell: systemctl daemon-reload && mount -a
+
+  - name: Set directory Permissions
+    shell: chown -R 1000:1000 /var/jenkins_home
+
+  - name: Run Jenkins Container
+    docker_container:
+      name: jenkins
+      image: jenkins/jenkins
+      state: started
+      restart_policy: always
+      ports:
+        - "8080:8080"
+      volumes:
+        - /var/jenkins_home:/var/jenkins_home

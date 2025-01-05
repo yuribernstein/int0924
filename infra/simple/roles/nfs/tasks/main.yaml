@@ -1,0 +1,22 @@
+---
+  - name: Install NFS Server
+    apt:
+      name: nfs-server
+      state: present
+
+  - name: Create "{{ export_directory }}"
+    file:
+      name: "{{ export_directory }}"
+      state: directory
+
+  - name: Set directory Permissions
+    shell: chown -R nobody:nogroup "{{ export_directory }}"
+
+  - name: Set up the NFS export
+    ansible.builtin.lineinfile:
+      path: /etc/exports
+      line: "{{ export_directory }} {{ client_ip }}(rw,sync,no_root_squash,no_subtree_check)"
+      create: yes
+
+  - name: Apply export config
+    shell: systemctl daemon-reload && systemctl restart nfs-server
