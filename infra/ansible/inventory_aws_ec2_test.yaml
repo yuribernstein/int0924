@@ -9,6 +9,9 @@ keyed_groups:                            # Create Ansible groups based on instan
     prefix: ec2                   # Prefix for the group name (underscore for consistency)
 hostnames:                               
   - dns-name                             # Use the DNS name as the hostname to connect to
-compose:                                 
-  ansible_host: dns-name                 # Use the DNS name for the 'ansible_host' variable
-  instance_name: tags.Name               # Create a variable `instance_name` from the Name tag
+compose:
+  my_ansible_host: public_ip_address       
+  my_instance_name: tags.Name              
+  my_instance_type: instance_type          
+  my_private_ip: private_ip_address        
+  my_availability_zone: placement.availability_zone 

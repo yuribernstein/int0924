@@ -1,8 +1,12 @@
 ---
+
+block:
   - name: Install NFS Server
     apt:
       name: nfs-server
       state: present
+    notify:
+      reload systemctl daemon
 
   - name: Create "{{ export_directory }}"
     file:
@@ -17,6 +21,16 @@
       path: /etc/exports
       line: "{{ export_directory }} {{ client_ip }}(rw,sync,no_root_squash,no_subtree_check)"
       create: yes
+    vars:
+      client_ip: 10.2.2.2
 
   - name: Apply export config
     shell: systemctl daemon-reload && systemctl restart nfs-server
+
+rescue:
+  - name:
+
+
+always:
+  - name:
+  
