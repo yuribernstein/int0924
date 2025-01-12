@@ -1,0 +1,6 @@
+instance_name = "created by terraform"
+ami           = "ami-09040d770ffe2224f"
+instance_type = "t2.micro"
+region        = "us-east-2"
+docker_image  = "yuribernstein/advisor:ddfde4b23c48bf6915e01daa19b44a9dd5299d70"
+key_name      = "int_aws"
