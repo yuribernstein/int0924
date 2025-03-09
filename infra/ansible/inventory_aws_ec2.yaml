@@ -1,0 +1,16 @@
+plugin: aws                         # Use the AWS EC2 dynamic inventory plugin
+regions:                                 
+  - us-west-2                            # AWS region to query for instances
+filters:                                 
+  instance-state-name: running           # Only include instances that are in the 'running' state
+keyed_groups:                            # Create Ansible groups based on instance tags
+  - key: tags.Purpose                    # Group instances by their 'Name' tag
+    prefix: ec2                   # Prefix for the group name (underscore for consistency)
+hostnames:                               
+  - dns-name                             # Use the DNS name as the hostname to connect to
+compose:
+  my_ansible_host: public_ip_address       
+  my_instance_name: tags.Name              
+  my_instance_type: instance_type          
+  my_private_ip: private_ip_address        
+  my_availability_zone: placement.availability_zone 
