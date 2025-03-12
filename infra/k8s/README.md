@@ -15,7 +15,7 @@ Prerequisites
 
 IMPORTANT!!!
 Instances with these specs exceed AWS free tier limits.
-This guide uses t2.medium instances in us-east-2, costing $0.0464/hour.
+This guide uses t3.medium instances in us-east-2, costing $0.0464/hour.
 Terminate the instances when done to avoid unnecessary charges!
 
 ## Step 1: Provision EC2 Instances
@@ -38,7 +38,7 @@ Actions:
 
 SSH into the `control-plane` instance.
 
-Copy and run `k8s.cp.sh` to install and configure Kubernetes components.
+Copy and run `setup.cp.sh` to install and configure Kubernetes components.
 
 Retrieve the generated kubeadm join command.
 
@@ -50,7 +50,7 @@ Actions:
 
 SSH into each `worker` node.
 
-Copy and run `k8s.wn.sh` to install Kubernetes components.
+Copy and run `setup.wn.sh` to install Kubernetes components.
 
 Execute the kubeadm join command retrieved from the control-plane node.
 
@@ -78,6 +78,10 @@ Copy the kubeconfig from the control-plane node to your laptop:
 
 `scp -i ~/.ssh/<your-key>.pem ubuntu@<control-plane-public-ip>:/etc/kubernetes/admin.conf ~/.kube/config`
 
+Modify the server section to be your control plane public address
+
+Modify the security group to allow traffic on 6443
+
 Set correct permissions:
 
 `chmod 600 ~/.kube/config`
@@ -94,6 +98,8 @@ If successful, you should see the list of Kubernetes nodes.
 Deploy the Kubernetes Dashboard using predefined YAML manifests located in yamls/.
 
 Actions:
+Apply the official dashboard yaml:
+`kubectl apply -f kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml`
 
 Apply the dashboard deployment:
 
