@@ -99,7 +99,7 @@ Deploy the Kubernetes Dashboard using predefined YAML manifests located in yamls
 
 Actions:
 Apply the official dashboard yaml:
-`kubectl apply -f kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml`
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml`
 
 Apply the dashboard deployment:
 
