@@ -14,6 +14,9 @@ function check_result() {
 git clone https://github.com/yuribernstein/int0924.git &>/dev/null
 check_result "cloning repository"
 
+sudo chmod -R 777 int0924
+check_result "changing permissions"
+
 sudo apt -y update &>/dev/null && sudo apt install python3.12-venv -y &>/dev/null
 check_result "installing venv"
 
