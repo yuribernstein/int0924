@@ -45,7 +45,7 @@ check_result "creating run.sh script"
 
 
 
-cat<<EOF>> /etc/systemd/system/systeminfo.service
+sudo cat<<EOF>> /etc/systemd/system/systeminfo.service
 [Unit]
 Description=My Custom Service
 After=network.target
