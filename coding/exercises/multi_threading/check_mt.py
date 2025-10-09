@@ -50,7 +50,7 @@ def generate_report():
 # Run URL checks in parallel
 with concurrent.futures.ThreadPoolExecutor(max_workers=20) as liveness_threads_pool:
     # Submit URL check tasks
-    futures = [liveness_threads_pool.submit(check_url) for _ in range(20)]
+    futures = [liveness_threads_pool.submit(check_url) for i in range(20)]
     # Generate report after tasks complete
     liveness_threads_pool.submit(generate_report)
 

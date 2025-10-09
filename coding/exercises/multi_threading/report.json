@@ -1,0 +1,482 @@
+[
+    {
+        "url": "googletagmanager.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "wikipedia.org",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "apple.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "en.wikipedia.org",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "microsoft.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "maps.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "linkedin.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "pinterest.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "vimeo.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "bit.ly",
+        "status_code": "OK"
+    },
+    {
+        "url": "wordpress.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "twitter.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "wordpress.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "facebook.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "play.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "plus.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "api.whatsapp.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "apps.apple.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "youtube.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "youtu.be",
+        "status_code": "OK"
+    },
+    {
+        "url": "github.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "docs.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "mozilla.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "x.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "goo.gl",
+        "status_code": "OK"
+    },
+    {
+        "url": "nih.gov",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "itunes.apple.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "player.vimeo.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "github.io",
+        "status_code": "OK"
+    },
+    {
+        "url": "tumblr.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "drive.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "blogspot.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "instagram.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "miit.gov.cn",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "forms.gle",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "gravatar.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "apache.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "yahoo.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "reddit.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "policies.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "amazon.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "whatsapp.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "tiktok.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "archive.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "medium.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "nytimes.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "maps.app.goo.gl",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "macromedia.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "amazonaws.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "adobe.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "flickr.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "beian.miit.gov.cn",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "nginx.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "w3.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "office.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "europa.eu",
+        "status_code": "OK"
+    },
+    {
+        "url": "forbes.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "spotify.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "creativecommons.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "f5.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "httpd.apache.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "zoom.us",
+        "status_code": "OK"
+    },
+    {
+        "url": "wa.me",
+        "status_code": "OK"
+    },
+    {
+        "url": "t.co",
+        "status_code": "OK"
+    },
+    {
+        "url": "www.ncbi.nlm.nih.gov",
+        "status_code": "OK"
+    },
+    {
+        "url": "cloudflare.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "wixsite.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "web.archive.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "t.me",
+        "status_code": "OK"
+    },
+    {
+        "url": "soundcloud.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "qq.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "theguardian.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "nginx.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "sites.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "baidu.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "cnn.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "sourceforge.net",
+        "status_code": "OK"
+    },
+    {
+        "url": "who.int",
+        "status_code": "OK"
+    },
+    {
+        "url": "sciencedirect.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "m.facebook.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "youtube-nocookie.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "open.spotify.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "doi.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "issuu.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "bbc.co.uk",
+        "status_code": "OK"
+    },
+    {
+        "url": "bbc.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "paypal.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "tinyurl.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "googleblog.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "wiley.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "weebly.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "researchgate.net",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "mit.edu",
+        "status_code": "OK"
+    },
+    {
+        "url": "reuters.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "wikimedia.org",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "live.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "dropbox.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "bing.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "workspaceupdates.googleblog.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "cdc.gov",
+        "status_code": "OK"
+    },
+    {
+        "url": "harvard.edu",
+        "status_code": "OK"
+    },
+    {
+        "url": "shopify.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "oracle.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "wsj.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "bloomberg.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "ec.europa.eu",
+        "status_code": "OK"
+    },
+    {
+        "url": "stanford.edu",
+        "status_code": "OK"
+    },
+    {
+        "url": "accounts.google.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "un.org",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "ibm.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "springer.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "washingtonpost.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "opera.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "nature.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "vk.com",
+        "status_code": "OK"
+    },
+    {
+        "url": "php.net",
+        "status_code": "OK"
+    },
+    {
+        "url": "gnu.org",
+        "status_code": "OK"
+    },
+    {
+        "url": "weibo.com",
+        "status_code": "FAILED"
+    },
+    {
+        "url": "imdb.com",
+        "status_code": "FAILED"
+    }
+]
