@@ -11,7 +11,7 @@ function check_result() {
 
 
 
-sudo git clone https://github.com/yuribernstein/int0924.git &>/dev/null
+git clone https://github.com/yuribernstein/int0924.git &>/dev/null
 check_result "cloning repository"
 
 sudo apt -y update &>/dev/null && sudo apt install python3.12-venv -y &>/dev/null
