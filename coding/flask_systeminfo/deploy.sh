@@ -45,7 +45,7 @@ check_result "creating run.sh script"
 
 
 
-sudo cat<<EOF>> /etc/systemd/system/systeminfo.service
+cat<<EOF>> systeminfo.service
 [Unit]
 Description=My Custom Service
 After=network.target
@@ -61,6 +61,7 @@ RestartSec=5s
 WantedBy=multi-user.target
 EOF
 
+sudo mv systeminfo.service /etc/systemd/system/
 check_result "setting up systemd service"
 
 
