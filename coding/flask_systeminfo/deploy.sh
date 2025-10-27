@@ -36,7 +36,7 @@ check_result "copying application to /opt/flask_systeminfo"
 cat<<EOF>> /opt/flask_systeminfo/run.sh
 #!/bin/bash
 #
-source /opt/flask_systeminfo/_venv_/bin/activate
+source /opt/systeminfo/_venv_/bin/activate
 python3 app.py
 EOF
 
@@ -51,8 +51,8 @@ Description=My Custom Service
 After=network.target
 
 [Service]
-WorkingDirectory=/opt/flask_systeminfo
-ExecStart=/opt/flask_systeminfo/run.sh
+WorkingDirectory=/opt/systeminfo
+ExecStart=/opt/systeminfo/run.sh
 Type=simple
 Restart=on-failure
 RestartSec=5s

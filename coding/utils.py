@@ -1,7 +1,7 @@
 import time
 import functools
-from commons.logs import get_logger
-logger = get_logger()
+from logs import logger
+
 
 
 

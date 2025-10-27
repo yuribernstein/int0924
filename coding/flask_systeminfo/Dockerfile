@@ -1,4 +1,4 @@
-FROM python 
+FROM python:3.11-slim
 RUN mkdir /systeminfo
 RUN chmod 777 /systeminfo
 COPY . /systeminfo
